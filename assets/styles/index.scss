@@ -1,32 +1,27 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-.boardHolder{
-    display:flex;
-    justify-content: center;
 
-}
-.board{
-    width:50%;
-    text-align: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    height: 350px;
-    flex-grow:1;
-    justify-content: center;
-}
-.letterBox{
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%;
-    height: 200px;
-    background-color: #08347a;
-    border: white solid 5px;
-}
 body{
 background-color:#c90202;
 text-align: center;
 }
+
+// .board{
+// margin: 500;
+// font-size:25px; 
+// }
+table{
+    margin: 0 auto;
+    font-size: 25px;
+    border-color: black;
+    background-color: aquamarine;
+
+}
+
+table tr td{
+    height: 125px;
+    width: 125px;
+    border-color: black;
+}
+
