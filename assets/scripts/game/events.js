@@ -35,6 +35,7 @@ const addHandlers = () => {
   $('#signUp').on('submit', onSignUp)   
   $('#signIn').on('submit', onSignIn)
   $('#createBoard').on('click', renderBoard)
+  ee
 }
 
 module.exports = {

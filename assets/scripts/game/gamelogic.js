@@ -17,6 +17,7 @@ const createBoard = function () {
             let cellText = document.createTextNode("cell")
             cell.appendChild(cellText);
             row.appendChild(cell);
+            cell.setAttribute('data-index', j)
         }
         //add row to the table body
         tableBody.appendChild(row);
