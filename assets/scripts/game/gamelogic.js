@@ -2,6 +2,7 @@
 //////////////////////Variables//////////////////////
 let letter = "X"
 let turn = 0
+let cells = $(".cell")
 
 //////////////////////BoardCreation//////////////////////
 
@@ -51,6 +52,7 @@ const createBoard = function () {
    let cells = $(".cell")
    cells.on("click", () => {
     placeLetter(event)
+    winCons()
     letterSwitcher()
     })
     
@@ -70,6 +72,19 @@ const placeLetter = function(event){
 const letterSwitcher = function(){
     letter === "X" ? letter = "O" : letter = "X"
     console.log(letter)
+}
+
+const winCons = function(){
+    $(".cell")[0].innerHTML === letter && $(".cell")[1].innerHTML === letter && $(".cell")[2].innerHTML === letter && alert(`player ${letter} wins`);
+    $(".cell")[3].innerHTML === letter && $(".cell")[4].innerHTML === letter && $(".cell")[5].innerHTML === letter && alert(`player ${letter} wins`);
+    $(".cell")[6].innerHTML === letter && $(".cell")[7].innerHTML === letter && $(".cell")[8].innerHTML === letter && alert(`player ${letter} wins`);
+    $(".cell")[0].innerHTML === letter && $(".cell")[3].innerHTML === letter && $(".cell")[6].innerHTML === letter && alert(`player ${letter} wins`);
+    $(".cell")[1].innerHTML === letter && $(".cell")[4].innerHTML === letter && $(".cell")[7].innerHTML === letter && alert(`player ${letter} wins`);
+    $(".cell")[2].innerHTML === letter && $(".cell")[5].innerHTML === letter && $(".cell")[8].innerHTML === letter && alert(`player ${letter} wins`);
+    $(".cell")[0].innerHTML === letter && $(".cell")[4].innerHTML === letter && $(".cell")[8].innerHTML === letter && alert(`player ${letter} wins`);
+    $(".cell")[2].innerHTML === letter && $(".cell")[4].innerHTML === letter && $(".cell")[6].innerHTML === letter && alert(`player ${letter} wins`);
+
+
 }
 
 module.exports = {
