@@ -19,16 +19,6 @@ const failure = (error) => {
   console.error(error)
 }
 
-const win = () => {
-    console.log(player[i].email + "wins!")
-}
-
-// const placeLetter = (player , arr , index) => {
-//     gameBoard[arr][index] = player
-//     console.log(player + arr + index)
-//     alert('said something')
-// }
-
 module.exports = {
   failure,
   success,

@@ -29,7 +29,6 @@ const createBoard = function () {
 
         //add row to the table body
         tableBody.appendChild(row);
-
     }
 
     let board = document.getElementById("board")
@@ -41,7 +40,6 @@ const createBoard = function () {
     //sets border attribute of table to ()
     table.setAttribute("border", "1")
     //Add click handler to the cells
-    
 }
   const  createClasses = function(){
     $( "tr" ).addClass( "row" );
@@ -54,8 +52,7 @@ const createBoard = function () {
     placeLetter(event)
     winCons()
     letterSwitcher()
-    })
-    
+    })  
 }
 //////////////////////GameLogic//////////////////////
 /*callback will run the following: 
@@ -67,7 +64,6 @@ const placeLetter = function(event){
         let temp = event.target
          temp.innerHTML = letter
 }
-
 
 const letterSwitcher = function(){
     letter === "X" ? letter = "O" : letter = "X"
@@ -83,8 +79,6 @@ const winCons = function(){
     $(".cell")[2].innerHTML === letter && $(".cell")[5].innerHTML === letter && $(".cell")[8].innerHTML === letter && alert(`player ${letter} wins`);
     $(".cell")[0].innerHTML === letter && $(".cell")[4].innerHTML === letter && $(".cell")[8].innerHTML === letter && alert(`player ${letter} wins`);
     $(".cell")[2].innerHTML === letter && $(".cell")[4].innerHTML === letter && $(".cell")[6].innerHTML === letter && alert(`player ${letter} wins`);
-
-
 }
 
 module.exports = {

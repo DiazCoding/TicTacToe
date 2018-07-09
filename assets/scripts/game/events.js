@@ -30,7 +30,7 @@ const renderBoard = function (event){
 }
 
 //TODO refactor this later
-const addHandlers = () => {
+const addHandlers = function(){
   console.log('this works')
   $('#signUp').on('submit', onSignUp)   
   $('#signIn').on('submit', onSignIn)
