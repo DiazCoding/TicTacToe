@@ -24,10 +24,10 @@ const onSignIn = function (event) {
 const renderBoard = function (event){
   event.preventDefault()
   gameLogic.createBoard()
+  gameLogic.createClasses()
+  gameLogic.clickHandlers()
   console.log("this works3")
 }
-
-
 
 //TODO refactor this later
 const addHandlers = () => {
@@ -35,7 +35,6 @@ const addHandlers = () => {
   $('#signUp').on('submit', onSignUp)   
   $('#signIn').on('submit', onSignIn)
   $('#createBoard').on('click', renderBoard)
-  ee
 }
 
 module.exports = {

@@ -4,8 +4,10 @@
 // const example = require('./example')
 const handlers = require('./game/events')
 const board = require('./game/gamelogic')
+
 // use require without a reference to ensure a file is bundled
 // require('./example')
 $(() => {
     handlers.addHandlers()
+
 })
