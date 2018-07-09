@@ -50,7 +50,8 @@ const createBoard = function () {
   const clickHandlers = function(){
    let cells = $(".cell")
    cells.on("click", () => {
-       placeLetter
+    placeLetter(event)
+    letterSwitcher()
     })
     
 }
@@ -60,10 +61,15 @@ placeLetter(Jquery)
 winCons(for,if)
 letterSwitcher
 */
-const placeLetter = function(){
-    (event) => {
+const placeLetter = function(event){
         let temp = event.target
          temp.innerHTML = letter
+}
+
+
+const letterSwitcher = function(){
+    letter === "X" ? letter = "O" : letter = "X"
+    console.log(letter)
 }
 
 module.exports = {
