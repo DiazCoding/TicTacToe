@@ -26,7 +26,6 @@ const createBoard = function () {
             cell.setAttribute('data-index', j)
         }
         innerLoopCounter++
-
         //add row to the table body
         tableBody.appendChild(row);
     }
