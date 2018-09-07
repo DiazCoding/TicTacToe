@@ -1,7 +1,6 @@
 'use strict'
 //////////////////////Variables//////////////////////
 let letter = "X"
-let turn = 0
 let cells = $(".cell")
 
 //////////////////////BoardCreation//////////////////////
@@ -58,6 +57,12 @@ const createBoard = function () {
 placeLetter(Jquery)
 winCons(for,if)
 letterSwitcher
+
+Used ternaries in order to check winCons for a match in the letters
+
+Used letterSwitcher in order to go from X to O instead of counting turns or having seperate players
+
+placeLetter edits the inner html of the cells and changes it to the Letter 
 */
 const placeLetter = function(event){
         let temp = event.target
