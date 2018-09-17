@@ -29,6 +29,11 @@ const renderBoard = function (event){
   console.log("this works3")
 }
 
+const resetBoard = function (event){
+  event.preventDefault()
+  gameLogic.resetBoard()
+}
+
 //TODO refactor this later
 const addHandlers = function(){
   console.log('this works')

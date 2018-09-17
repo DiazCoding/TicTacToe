@@ -85,8 +85,16 @@ const winCons = function(){
     $(".cell")[2].innerHTML === letter && $(".cell")[4].innerHTML === letter && $(".cell")[6].innerHTML === letter && alert(`player ${letter} wins`);
 }
 
+//////////////////////Board Reset//////////////////////
+
+const resetBoard = function(){
+    let 
+}
+
+
 module.exports = {
     createBoard , 
     createClasses , 
-    clickHandlers
+    clickHandlers,
+    resetBoard
 }
